@@ -1,0 +1,105 @@
+:root {
+  --color-background_dark: #093545;
+  --color-background_light: #f5f5f5;
+  --color-primary: #224957;
+  --color-secondary: #f5f5f5;
+  --color-btn-background: #20df7f;
+  --color-btn-primary_text: #224957;
+  --color-btn-background_darkMode: #033e80;
+  --color-btn-primary_text_darkMode: #f5f5f5;
+  --color-btn-secondary-border: #224957;
+  --color-input-background:#224957;
+  --color-input-text: #f5f5f5;
+}
+
+html,
+body {
+  background: var(--color-background_light);
+  box-sizing: border-box;
+  width: 100%;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  font-family: "Lexend Decans", sans-serif;
+  font-style: normal;
+  color: var(--color-primary);
+}
+
+.darkMode {
+  background: var(--color-background_dark);
+  color: var(--color-secondary);
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 80px;
+  text-align: center;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 62px;
+  text-align: center;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+}
+
+.btnPrimary {
+  background: var(--color-btn-background);
+  width: 300px;
+  height: 45px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--color-btn-primary_text);
+}
+
+.darkMode .btnPrimary {
+  background: var(--color-btn-background_darkMode);
+  width: 300px;
+  height: 42.93px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--color-btn-primary_text_darkMode);
+}
+
+.btnSecondary {
+  width: 300px;
+  height: 45px;
+  border: 2px solid var(--color-btn-secondary-border);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.3));
+  border-radius: 10px;
+}
+
+input {
+    width: 300px;
+    height: 42.93px;
+    background: var(--color-input-background);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--color-input-text);
+}
+
+p{
+    font-weight: 400px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: var(--color-btn-primary_text);
+}
