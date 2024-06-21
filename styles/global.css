@@ -4,7 +4,7 @@
   --color-primary: #224957;
   --color-secondary: #f5f5f5;
   --color-btn-background: #20df7f;
-  --color-btn-primary_text: #224957;
+  --color-btn-primary_text: #f5f5f5;
   --color-btn-background_darkMode: #033e80;
   --color-btn-primary_text_darkMode: #f5f5f5;
   --color-btn-secondary-border: #224957;
@@ -55,6 +55,7 @@ h3 {
   width: 300px;
   height: 45px;
   border-radius: 10px;
+  border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
   font-weight: 400;
   font-size: 16px;
@@ -90,15 +91,23 @@ input {
     width: 300px;
     height: 42.93px;
     background: var(--color-input-background);
+    border-radius: 10px;
+    border: none;
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
     color: var(--color-input-text);
+    padding-left: 15px;
+}
+
+
+input::placeholder{
+  color: var(--color-input-text);
 }
 
 p{
     font-weight: 400px;
-    font-size: 16px;
+    font-size: 22px;
     line-height: 20px;
     text-align: center;
     color: var(--color-btn-primary_text);

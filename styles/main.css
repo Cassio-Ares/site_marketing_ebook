@@ -1,0 +1,60 @@
+body{
+    display: grid;
+    grid-template-rows: 85% 15%;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+#bookImag{
+    background: url('../public/img/book.svg');
+    position: relative;
+    left: 150px;
+    transform: rotateZ(-20deg); 
+    background-size: 120%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  margin: 60px auto;
+}
+
+#form *{
+    margin-bottom: 15px;
+}
+
+
+#vectorImag{
+background: url('../public/img/footer_img.svg');
+width: 100%;
+height: 100%;
+background-size: cover;
+background-repeat: no-repeat;
+position: relative;
+}
+
+#btn{
+position: absolute;
+left: 20px;
+top: 30px;
+background-color: transparent;
+border: none;
+}
+
+#btn img{
+    width: 55px;
+}
+
+.btnPrimary:hover{
+  box-shadow: 0 0 5px, 0 0 25px #2e3131, 0 0 50px #556363 , 0 0 200px #434949;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+ 
+}
