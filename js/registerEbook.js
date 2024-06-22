@@ -31,7 +31,7 @@ window.addEventListener("load", () => {
         }
       }
     ).then(()=>{
-      alert("success");
+      location.href= './download.html'
     })
 
   });
