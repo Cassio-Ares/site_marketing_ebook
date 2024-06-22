@@ -6,8 +6,7 @@ window.addEventListener("load", () => {
 
     if (email.indexOf("@gmail.com") || email.indexOf("@outlook.com") === -1) {
         //  alert("error");
-    } else {
-    }
+    } 
 
     const tel = document.querySelector("input[name=tel]").value;
 
@@ -16,6 +15,24 @@ window.addEventListener("load", () => {
     if(!regex.test(tel) && tel.replace("/\D\g","").length != 11) {
          alert("error");
     }
+
+
+    fetch("http://localhost:3000/salvarRegister", 
+      {
+        method: "POST",
+        body: JSON.stringify((
+          {
+            email: email,
+            telefone: tel
+          }
+        )), 
+        headers: {
+          "content-type": "application/json"
+        }
+      }
+    ).then(()=>{
+      alert("success");
+    })
 
   });
 });
